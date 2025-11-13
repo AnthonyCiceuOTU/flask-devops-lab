@@ -15,17 +15,18 @@ MOTIVATIONAL_QUOTES = [
 ]
 
 
-@app.route('/')
-def hello():
-    return 'Hello, DevOps World!'
+@app.route("/")
+def hello() -> str:
+    """Return greeting for root endpoint."""
+    return "Hello, DevOps World!"
 
 
-@app.route('/motivator')
+@app.route("/motivator")
 def motivator():
-    """Bonus challenge route: returns a random DevOps quote."""
+    """Return a random DevOps motivational quote as JSON."""
     quote = random.choice(MOTIVATIONAL_QUOTES)
     return jsonify({"quote": quote})
 
-#Test msg
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run()
