@@ -23,6 +23,6 @@ def motivator():
     quote = random.choice(MOTIVATIONAL_QUOTES)
     return jsonify({"quote": quote})
 
-
+#Test msg
 if __name__ == '__main__':
     app.run()
