@@ -6,8 +6,11 @@ app = Flask(__name__)
 MOTIVATIONAL_QUOTES = [
     "Automate what you hate.",
     "Ship small, ship often.",
-    "Tests are your future self’s best friend.",
-    "If it hurts, do it more often — then automate it.",
+    "Tests are your future self's best friend.",
+    (
+        "If it hurts, do it more often "
+        "— then automate it."
+    ),
     "Good DevOps is invisible; only failures are loud.",
 ]
 
